@@ -12,233 +12,8 @@ body {
 font-weight: 700;
 }
 
-/* ===== RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+End?
 
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-  background: #ffffff;
-  color: #111;
-  line-height: 1.6;
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 40px;
-  background-color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  border-bottom: 1px solid #eee;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #333;
-}
-
-.logo img {
-  height: 36px;
-}
-
-.logo span {
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #111;
-  transition: all 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #0070f3;
-}
-
-.menu-toggle {
-  display: none;
-}
-
-/* ===== HERO ===== */
-.hero {
-  padding: 100px 40px 60px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 30px;
-}
-
-.cta {
-  padding: 12px 28px;
-  background: #0070f3;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: "background" 0.3s ease;
-}
-
-.cta:hover {
-  background: #005ecb;
-}
-
-/* ===== ABOUT SECTION ===== */
-.content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.content h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.content p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* ===== CARD SECTION ===== */
-.cards {
-  padding: 60px 40px;
-  background: #fafafa;
-  text-align: center;
-}
-
-.cards h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.card {
-  width: 28%;
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.card img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-}
-
-.card h3 {
-  padding: 16px;
-  font-weight: 600;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* ===== VIDEO SECTION ===== */
-.video {
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.video h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.video iframe {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  padding: 40px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #393939;
-  border-top: 1px solid #eee;
-}
-
-.footer a {
-  color: #10345e;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-/* ===== RESPONSIVE BREAKPOINTS ===== */
-@media (max-width: 1024px) {
-  .card {
-    width: 45%;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .card {
-    width: 90%;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -426,7 +201,7 @@ body {
   margin: 0 5px;
 }
 
-/* ===== RESPONSIVE BREAKPOINTS ===== */
+/* RESPONSIVE BREAKPOINTS ===== */
 @media (max-width: 1024px) {
   .card {
     width: 45%;
@@ -438,6 +213,11 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}
 
   .menu-toggle {
     display: block;
@@ -476,7 +256,7 @@ body {
 }
 
 .logo img {
-  height: 40px; /* adjust as needed */
+  height: 40px;
   width: auto;
 }
 
@@ -487,26 +267,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #a3a3a3;
+  background-color: #d4d4d4;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
     z-index: 1000;
 }
 
-/* Logo styling */
-.logo {
-  display: flex;x
-  align-items: center;
-  gap: 12px;
-  color: #100000;}
-
-.logo img {
-  height: 40px;
-  width: auto;
-}
-
-/* Nav links styling */
+/* Nav links Style */
 .nav-links {
   list-style: none;
   display: flex;
@@ -517,13 +285,13 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #100000;
+  color: #000000;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #bedcfe;
+  color: #ffffff;
 }
 
 /* Hide mobile menu icon on desktop */
@@ -531,7 +299,7 @@ body {
   display: none;
 }
 
-/* Responsive nav (optional for mobile) */
+/* Responsive nav mobile */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -563,7 +331,7 @@ body {
   This CSS file defines the layout and styles for a card-based UI component.
   Each card contains an image and is designed to be responsive across different screen sizes.
 */
-/* General layout for card container */
+/* Gen. layout for card container */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -596,7 +364,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Hover effect for images */
+/* Hover effect images */
 .card img:hover {
   transform: scale(1.05);
 }
@@ -627,11 +395,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .card {
-    width: 90%;
-  }
-}
+
 
 
 /**** Styless****/
