@@ -1,0 +1,74 @@
+
+/* Card Layout Styles
+  This CSS file defines the layout and styles for a card-based UI component.
+  Each card contains an image and is designed to be responsive across different screen sizes.
+*/
+/* General layout for card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Individual card layout */
+.card {
+  width: 28%;
+  margin: 10px;
+  border: 1px solid lab(84.27% -15.35 -15.67);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(17, 92, 119, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Image behavior inside cards */
+.card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* individual styles per card */
+.card-container .card:nth-child(1) img {
+  border-radius: 4px;
+}
+
+.card-container .card:nth-child(2) img {
+  filter: grayscale(20%);
+}
+
+.card-container .card:nth-child(3) img {
+  border: 2px solid #ccc;
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}
