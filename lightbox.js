@@ -25,3 +25,14 @@ lightbox.addEventListener("click", (e) => {
   }
 });
 // Close modal with Escape key
+
+//
+
+const soloImg = document.querySelector(".standalone-image img");
+soloImg.addEventListener("click", () => {
+  // Reuse your existing lightbox code
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  lightbox.style.display = "flex";
+  lightboxImg.src = soloImg.src;
+})

@@ -54,3 +54,23 @@
     max-height: 25%;
     max-width: 25%;
   }
+
+  /* Standalone image styling */
+.standalone-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.standalone-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.standalone-image img:hover {
+  transform: scale(1.03);
+}

@@ -2,15 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
 /* General body styling */
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f4f8;
-  color: #333;
-font-weight: 700;
-}
-/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
@@ -22,18 +13,20 @@ body {
   background: #ffffff;
   color: #111;
   line-height: 1.6;
+  font-weight: 700;
 }
+
 /* ===== NAVBAR ===== */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* space between logo and menu toggle */
   align-items: center;
-  padding: 25px 40px;
+  padding: 15px 30px;
   background-color: #fff;
+  border-bottom: 1px solid #807c7c;
   position: sticky;
   top: 0;
-  z-index: 999;
-  border-bottom: 1px solid #eee;
+  z-index: 1000;
 }
 
 .logo {
@@ -44,7 +37,6 @@ body {
 
 .logo img {
   height: 36px;
-  padding: 0;
 }
 
 .logo span {
@@ -71,17 +63,14 @@ body {
 
 .menu-toggle {
   display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* ===== HERO ===== */
 #home-hero {
-  padding: 100px 40px 60px;
-  text-align: center;
-}
-
-#home-hero {
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   background: url('Assets/cals1.jpg') center center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -89,7 +78,6 @@ body {
   align-items: center;
   text-align: center;
   color: white;
-  position: relative;
   padding: 0 20px;
 }
 
@@ -190,24 +178,18 @@ body {
 
 .video h2 {
   font-size: 1.5rem;
-  margin-bottom: 0px;
 }
 
 .video iframe {
   max-width: 100%;
   border-radius: 8px;
-  border-bottom: 400px;
-
 }
 
-                                  /* ===== FOOTER ===== */
-
-/* Footer Styles */
+/* ===== FOOTER ===== */
 .site-footer {
   background-color: #141414;
   color: #ffffff;
   padding: 40px 20px 20px 20px;
-  font-family: Arial, sans-serif;
 }
 
 .footer-container {
@@ -240,7 +222,6 @@ body {
   color: #ffb83d;
 }
 
-/* Footer bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
@@ -250,121 +231,16 @@ body {
   color: #aaa;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .footer-section {
-    margin: 20px 0;
-  }
-}
+/* ===== RESPONSIVE ===== */
 
-
-
-
-
-/* RESPONSIVE BREAKPOINTS ===== */
+/* Tablet */
 @media (max-width: 1024px) {
   .card {
     width: 45%;
   }
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-@media (max-width: 600px) {
-  .card {
-    width: 90%;
-  }
-}
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .card {
-    width: 90%;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
-
-
-
-/** Logo CSS!!!!!!!!!!!!!!!!!!!!!!!!!!!! **/
-
-/* Logo section styling */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  height: 40px;
-  width: auto;
-}
-
-
-/* Navbar********************/
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #d4d4d4;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-    z-index: 1000;
-}
-
-/* Nav links Style */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #ffffff;
-}
-
-/* Hide mobile menu icon on desktop */
-.menu-toggle {
-  display: none;
-}
-
-/* Responsive nav mobile */
+/* Mobile */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -372,9 +248,10 @@ body {
     background-color: #fff;
     position: absolute;
     top: 60px;
-    right: 30px;
+    right: 0;
     padding: 10px 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 200px;
   }
 
   .nav-links.active {
@@ -383,8 +260,17 @@ body {
 
   .menu-toggle {
     display: block;
-    cursor: pointer;
-    font-size: 24px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
   }
 }
 

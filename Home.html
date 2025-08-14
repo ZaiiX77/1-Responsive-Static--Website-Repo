@@ -26,7 +26,22 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="menu-toggle" id="menu-toggle">☰</div>
-  </nav>    
+  </nav>   
+  <script>
+    // This is for Mobile Nav Toggle
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="caption"></div>
+</div> 
 
   <section id="hero" class="hero-banner">
   <div class="hero-content">
@@ -45,7 +60,45 @@
 
 
 
-</body>
 
+                                        <!-- Footer Section -->
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- About / Brand -->
+    <div class="footer-section about">
+      <h2>Zyril Lencio</h2>
+      <p>Sharing creativity through passion projects and art.</p>
+    </div>
+    
+    <!-- Contact Info -->
+    <div class="footer-section contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:zyriltlencioyahoo.com">zyriltlencioyahoo.com</a></p>
+      <p>Phone: +1 587-889-3353</p>
+      <p>Address: Calgary, Alberta, Canada</p>
+    </div>
+    
+    <!-- Social Media Links -->
+    <div class="footer-section social">
+      <h3>Connect with Me</h3>
+      <a href="https://www.instagram.com/zy.sabi/" target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/in/zyril-lencio" target="_blank">LinkedIn</a>
+    </div>
+    
+  </div>
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Zyril Lencio. All rights reserved.</p>
+  </div>
+
+</footer>
+
+
+<script src="lightbox.js"></script>
+<script src="main.js"></script>
+</body>
 
 </html>
