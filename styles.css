@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-  
 
 /* General body styling */
 body {
@@ -11,9 +10,7 @@ body {
   color: #333;
 font-weight: 700;
 }
-
-End?
-
+/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +23,6 @@ body {
   color: #111;
   line-height: 1.6;
 }
-
 /* ===== NAVBAR ===== */
 .navbar {
   display: flex;
@@ -48,6 +44,7 @@ body {
 
 .logo img {
   height: 36px;
+  padding: 0;
 }
 
 .logo span {
@@ -77,26 +74,41 @@ body {
 }
 
 /* ===== HERO ===== */
-.hero {
+#home-hero {
   padding: 100px 40px 60px;
   text-align: center;
 }
 
-.hero h1 {
+#home-hero {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: url('Assets/cals1.jpg') center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 0 20px;
+}
+
+#home-hero h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.hero p {
+#home-hero p {
   font-size: 1.2rem;
   color: #444;
   margin-bottom: 30px;
+  text-shadow: #ccc;
 }
 
 .cta {
   padding: 12px 28px;
-  background: #0070f3;
+  background: #091829;
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
@@ -104,7 +116,7 @@ body {
 }
 
 .cta:hover {
-  background: #005ecb;
+  background: #bfd4ed;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -172,34 +184,87 @@ body {
 
 /* ===== VIDEO SECTION ===== */
 .video {
-  padding: 60px 40px;
+  padding: 0px 40px;
   text-align: center;
 }
 
 .video h2 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .video iframe {
   max-width: 100%;
   border-radius: 8px;
+  border-bottom: 400px;
+
 }
 
-/* ===== FOOTER ===== */
-.footer {
-  padding: 40px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #777;
-  border-top: 1px solid #eee;
+                                  /* ===== FOOTER ===== */
+
+/* Footer Styles */
+.site-footer {
+  background-color: #141414;
+  color: #ffffff;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
 }
 
-.footer a {
-  color: #0070f3;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 15px;
+  color: #cecece;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #c5c5c5;
   text-decoration: none;
-  margin: 0 5px;
+  line-height: 1.6;
 }
+
+.footer-section a:hover {
+  color: #ffb83d;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-section {
+    margin: 20px 0;
+  }
+}
+
+
+
+
 
 /* RESPONSIVE BREAKPOINTS ===== */
 @media (max-width: 1024px) {
@@ -345,12 +410,12 @@ body {
 .card {
   width: 28%;
   margin: 10px;
-  border: 1px solid lab(84.27% -15.35 -15.67);
+  border: 1px solid lab(98.85% -1.93 -1.77);
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(17, 92, 119, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #c9f0fa;
+  background-color: #e6f1f3;
   text-align: center;
 }
 

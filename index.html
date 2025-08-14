@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,
     , initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lightbox.css">
     <title>Zyril Lencio's Portfolio</title>
 
 </head>
@@ -13,19 +14,22 @@
     <!-- Responsive Navigation -->
   <nav class="navbar">
     <div class="logo">
-    <img src="Logo not final ZY.png" alt="Zyril Logo"><span>The Creative Journey by Yours Truly </span>
+      <a href ="index.html">
+    <img src="Assets/Logo not final ZY.png" alt="Zyril Logo"></a>
+    <span> The Creative Journey by Zyril</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#video">Video</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="menu-toggle" id="menu-toggle">☰</div>
   </nav>
 
   <!-- Hero Banner -->
-  <header class="hero">
+  <header id="home-hero" class="hero">
     <h1>Create. Inspire. Innovate.</h1>
     <p>Graphic design, UX/UI, photo editing, video content & more.</p>
     <a href="#portfolio" class="cta">Explore My Work</a>
@@ -46,9 +50,9 @@
   <section id="portfolio" class="cards">
     <h2>Creative Highlights</h2>
     <div class="card-container">
-      <div class="card"><img src="moto1.jpg" alt="Brand Identity"><h3>Photography</h3></div>
-      <div class="card"><img src="khalidv2b.jpg" alt="Illustration"><h3>Photo Editing</h3></div>
-      <div class="card"><img src="surrealism final.jpg" alt="Photo Editing"><h3>Creative Manipulation</h3>  </h3></div>
+      <div class="card"><img src="Assets/moto1.jpg" alt="Brand Identity"><h3>Photography</h3></div>
+      <div class="card"><img src="Assets/khalidv2b.jpg" alt="Illustration"><h3>Photo Editing</h3></div>
+      <div class="card"><img src="Assets/surrealism final.jpg" alt="Photo Editing"><h3>Creative Manipulation</h3>  </h3></div>
     </div>
   </section>
 
@@ -62,12 +66,9 @@
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/QEHW40uE9ME?si=fGGSsvMsIglBYzOW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  <!-- Footer -->
-  <footer id="contact" class="footer">
-    <p>&copy; 2025 Zyril Lencio | Connect with me: <a href="https://www.instagram.com/zy.sabi/">Instagram</a> | <a href="https://www.linkedin.com/in/zyril-lencio
-
-">LinkedIn</a> | <a href="https://www.yahoo.com/Zyriltlencio@yahoo.com">Email</a></p>
-  </footer>
+  <br>
+  <br>
+  
 
   <script>
     // This is for Mobile Nav Toggle
@@ -77,7 +78,53 @@
       navLinks.classList.toggle('active');
     });
   </script>
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="caption"></div>
+</div>
+
+                                        <!-- Footer Section -->
 
 
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- About / Brand -->
+    <div class="footer-section about">
+      <h2>Zyril Lencio</h2>
+      <p>Sharing creativity through passion projects and art.</p>
+    </div>
+    
+    <!-- Contact Info -->
+    <div class="footer-section contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:zyriltlencioyahoo.com">zyriltlencioyahoo.com</a></p>
+      <p>Phone: +1 587-889-3353</p>
+      <p>Address: Calgary, Alberta, Canada</p>
+    </div>
+    
+    <!-- Social Media Links -->
+    <div class="footer-section social">
+      <h3>Connect with Me</h3>
+      <a href="https://www.instagram.com/zy.sabi/" target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/in/zyril-lencio" target="_blank">LinkedIn</a>
+    </div>
+    
+  </div>
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Zyril Lencio. All rights reserved.</p>
+  </div>
+
+</footer>
+
+
+
+
+
+
+<script src="lightbox.js"></script>
 </body>
 </html>
