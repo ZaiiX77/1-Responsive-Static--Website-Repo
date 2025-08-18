@@ -1,3 +1,18 @@
+h1{
+  font-size: 2em;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: .75em;
+  color: #1a1a1a;
+  text-align: center;
+  text-indent: hanging;
+  padding: 1 1 30px;
+}
+
 /* Gen. layout for card container */
 .card-container {
   display: flex;
@@ -12,25 +27,36 @@
 /* Individual card layout */
 .card {
   width: 200%;
-  margin: 10px;
+  height: 450px;
+  margin: 0px;
   border: 1px solid lab(95.21% -5.69 -5.23);
-  border-radius: 4px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(17, 92, 119, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #d8f2f9;
+  background-color: #efefef;
   text-align: center;
 }
+
+
+.card text {
+  font-size: 16px;
+  color: #333;
+  padding: 15px;
+  line-height: 1.5;
+} 
 
 
 /* Image behavior inside cards */
 .card img {
   width: 100%;
-  max-height: 200px;
+  max-width: 50%;
+  max-height: 450px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
   transition: transform 0.3s ease;
+ float:right;  
 }
 
 /* Hover effect images */
@@ -51,7 +77,7 @@
 }
 
 .img  {
-    max-height: 25%;
+    max-height: 50%;
     max-width: 25%;
   }
 
@@ -60,11 +86,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 .standalone-image img {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
