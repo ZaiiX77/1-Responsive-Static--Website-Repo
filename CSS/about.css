@@ -63,6 +63,12 @@ p {
  float:right;  
 }
 
+.card p {
+  padding: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
 /* Hover effect images */
 .card img:hover {
   transform: scale(1.05);
@@ -74,9 +80,13 @@ p {
 }
 
 /* Responsive behavior */
-@media (max-width: 1024px) {
+
+@media (max-width: 768px) {
   .card {
     width: 100%; 
+    float: none;
+    margin: 0 auto;
+    display: block;
   }
 }
 
