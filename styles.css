@@ -197,20 +197,22 @@ p, h1, h2, h3, h4, h5, h6, span {
 
 /*=== porfolio section===*/
 
-.cta-btn{
-  padding: 30px 10px;
-  background: #cfcfcf;
-  border-radius: 30%;
-  text-align: center;
-
-}
  h2 {
   text-align: center;
   margin-bottom: 20px;
  }
-.cta-btn {
+
+ .porfolio-buttons {
+  gap: 20px;
   text-align: center;
-   color: #b81d1d;
+ }
+
+ .cta-btn{
+  padding: 10px 10px;
+  background: #060606;
+  border-radius: 30%;
+  color: #970000;
+  appearance: ;
 }
 
 
