@@ -2,32 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="lightbox.css">
-    <title>Home</title>
-
+    <title>UX/ UI</title>
 </head>
 <body>
-
-    <!-- Responsive Navigation -->
+        <!-- Responsive Navigation -->
   <nav class="navbar">
     <div class="logo">
-    <a href ="index.html">
-    <img src="../assets/Logo not final ZY.png" alt="Zyril Logo"></a>
+   <a href ="index.html">     
+    <img src="../assets/Logo not final ZY.png" alt="Zyril Logo"> </a>
     <span>The Creative Journey by Zyril</span>
     </div>
     <ul class="nav-links">
-      <li><a href="Home.html">Home</a></li>
+        <li><a href="Home.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="video.html">Video</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="menu-toggle" id="menu-toggle">☰</div>
-  </nav>   
-  <script>
+  </nav>
+
+<script>
     // This is for Mobile Nav Toggle
     const toggle = document.getElementById('menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -35,34 +33,17 @@
       navLinks.classList.toggle('active');
     });
   </script>
-
 <!-- Lightbox Modal -->
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
   <img class="lightbox-content" id="lightbox-img">
   <div id="caption"></div>
+</div>
+
+
+
 
   
-</div> 
-
-  <section id="hero" class="hero-banner">
-  <div class="hero-content">
-    <h1>Welcome to My Creative Journey</h1>
-    <p> Career Background| Passions |Journey</p>
-    <a href="#portfolio" class="btn">View Portfolio</a>
-  </div>
-</section>
-
-  
-
-
-  Visual and Creative Header Section
-  <header class="visual-header">
-
-
-
-
-
                                         <!-- Footer Section -->
 
 
@@ -98,9 +79,7 @@
 
 </footer>
 
-
 <script src="lightbox.js"></script>
 <script src="main.js"></script>
 </body>
-
 </html>
