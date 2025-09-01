@@ -197,18 +197,21 @@ p, h1, h2, h3, h4, h5, h6, span {
 
 /*=== porfolio section===*/
 
+.cta-btn{
+  padding: 30px 10px;
+  background: #cfcfcf;
+  border-radius: 30%;
+  text-align: center;
 
-.cta-button{
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #1a73e8;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
 }
-
-
+ h2 {
+  text-align: center;
+  margin-bottom: 20px;
+ }
+.cta-btn {
+  text-align: center;
+   color: #b81d1d;
+}
 
 
 /* ===== VIDEO SECTION ===== */
