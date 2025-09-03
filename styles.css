@@ -205,14 +205,15 @@ p, h1, h2, h3, h4, h5, h6, span {
  .porfolio-buttons {
   gap: 20px;
   text-align: center;
+    padding: 10px 10px;
+    margin-bottom: 30px;  
+    border-radius: 30%;
+
  }
 
  .cta-btn{
-  padding: 10px 10px;
   background: #060606;
-  border-radius: 30%;
   color: #970000;
-  appearance: ;
 }
 
 
