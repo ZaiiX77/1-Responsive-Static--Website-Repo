@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="lightbox.css">
-    <title>Home</title>
+    <title>Zyril Lencio's Portfolio</title>
 
 </head>
 <body>
@@ -14,9 +13,9 @@
     <!-- Responsive Navigation -->
   <nav class="navbar">
     <div class="logo">
-    <a href ="index.html">
-    <img src="./assets/logo.png" alt="Zyril Logo"></a>
-    <span>The Creative Journey by Zyril</span>
+      <a href ="index.html">
+    <img src="assets/logo.png" alt="Zyril Logo"></a>
+    <span> The Creative Journey by Zyril</span>
     </div>
     <ul class="nav-links">
       <li><a href="Home.html">Home</a></li>
@@ -26,8 +25,10 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="menu-toggle" id="menu-toggle">☰</div>
-  </nav>   
-  <script>
+  </nav>
+
+  
+ <script>
     // This is for Mobile Nav Toggle
     const toggle = document.getElementById('menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -35,31 +36,79 @@
       navLinks.classList.toggle('active');
     });
   </script>
-
 <!-- Lightbox Modal -->
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
   <img class="lightbox-content" id="lightbox-img">
   <div id="caption"></div>
+</div>
+
+  <!-- Hero Banner -->
+  <header id="home-hero" class="hero">
+    <h1>Create. Inspire. Innovate.</h1>
+    <p>Graphic design, UX/UI, photo editing, video content & more.</p>
+    <a href="#portfolio" class="cta">Explore My Work</a>
+
+  </header>
+
+  <!-- Content Section -->
+  <section id="about" class="content">
+    <div class="text">
+      <h2>About Me</h2>
+        <h3> This is my Creative Portfolio </h3>
+    <p> My name is Zyril Lencio.I am a Web Developer and  UX Designer studying at SAIT 2025!</p>
+    <p>This Portfolio consists of most of my creative work both freelance and academic. Enjoy! </p>
+    </div>
+  </section>
+
+  <!-- Card Section -->
+  <section id="portfolio" class="cards">
+    <h2>Creative Highlights</h2>
+    <div class="card-container">
+      <div class="card"><img src="assets/moto1.jpg" alt="Brand Identity"><h3>Photography</h3></div>
+      <div class="card"><img src="assets/khalidv2b.jpg" alt="Illustration"><h3>Photo Editing</h3></div>
+      <div class="card"><img src="assets/surrealism final.jpg" alt="Photo Editing"><h3>Creative Manipulation</h3>  </h3></div>
+    </div>
+  </section>
+
+<!-- Portfolio Gallery Section -->
+
+
+  <section id="portfolio"> 
+
+    <h2>Portfolio</h2>
 
   
-</div> 
-
-  <section id="hero" class="hero-banner">
-  <div class="hero-content">
-    <h1>Welcome to My Creative Journey</h1>
-    <p> Career Background| Passions |Journey</p>
-    <a href="#portfolio" class="btn">View Portfolio</a>
-  </div>
+    <div class="portfolio-buttons">
+<a href="portfolio-marketing.html" target="_blank" class="cta-btn"> Marketing</a> <br>
+<a href="portfolio-uxui.html" target="_blank" class="cta-btn"> UX/UI</a> <br>
+<a href="portfolio-gd.html" target="_blank" class="cta-btn"> Graphic Design</a> <br>
+<a href="portfolio-vidph.html" target="_blank" class="cta-btn"> Videos and Photography</a> <br>
+</div>
 </section>
-
-  
-
-
-  Visual and Creative Header Section
-  <header class="visual-header">
+<br>
 
 
+
+ 
+
+
+
+
+
+
+  <!-- Embedded Video* -->
+  <section id="video" class="video">
+    <h2>A Highly Motivational Video For Young Creatives </h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/UPk56BR1Cmk?si=OGuFj6L9ZwWlozC-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+    <h2>Another One Featuring: Tyler the Creator</h2>
+
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/QEHW40uE9ME?si=fGGSsvMsIglBYzOW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <br>
+  <br>
 
 
 
@@ -99,8 +148,11 @@
 </footer>
 
 
+
+
+
+
 <script src="lightbox.js"></script>
 <script src="main.js"></script>
 </body>
-
 </html>
