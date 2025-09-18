@@ -10,7 +10,7 @@ p {
   color: #1a1a1a;
   text-align: center;
   text-indent: hanging;
-  padding: 1 1 30px;
+  padding: 1em 1em 30px;
 }
 
 /* Gen. layout for card container */
@@ -19,16 +19,17 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 100%;
-  max-height: 1200px;
+  height: auto;
   margin: 0 auto;
   padding: 0px;
 }
 
 /* Individual card layout */
 .card {
-  width: 200%;
-  height: 450px;
-  margin: 0px;
+  width: auto;
+  height: auto;
+max-width: 2000px;
+  margin: 0 auto 40px;
   border: 1px solid lab(95.21% -5.69 -5.23);
   border-radius: 10px;
   overflow: hidden;
@@ -36,29 +37,29 @@ p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #efefef;
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 
-.card text {
+.card-text {
   font-size: 16px;
   color: #333;
   padding: 15px;
   line-height: 1.5;
+  flex: 1;
+  text-align: left;
 } 
-
-
-
-
 
 
 /* Image behavior inside cards */
 .card img {
   width: 100%;
-  max-width: 50%;
+  max-width: 600px;
   max-height: 550px;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
+  margin: 0;
   transition: transform 0.3s ease;
  float:right;  
 }
@@ -112,9 +113,3 @@ p {
   transform: scale(1.03);
 }
 
-.img { 
-  width: auto;
-  height: auto; 
-  border-radius: 8px;
-  object-fit: contain;
-}
