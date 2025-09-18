@@ -90,20 +90,17 @@ p {
   }
 }
 
-.img  {
-    max-height: 50%;
-    max-width: 25%;
-  }
+
 
   /* Standalone image styling */
-.standalone-image {
+.card-container.standalone-image {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 50px 0;
 }
 
-.standalone-image img {
+.card-container.standalone-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -111,13 +108,11 @@ p {
   transition: transform 0.3s ease;
 }
 
-.standalone-image img:hover {
+.card-container.standalone-image img:hover {
   transform: scale(1.03);
 }
 
 .img { 
-   max-width: 100%;
-  height: 100vh;
   width: auto;
   height: auto; 
   border-radius: 8px;
