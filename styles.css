@@ -129,6 +129,7 @@ body {
 p, h1, h2, h3, h4, h5, h6, span, .cta-btn {
   overflow: hidden;
   white-space: normal; /* ensures wrapping */
+  
 }
 
 
@@ -144,6 +145,7 @@ p, h1, h2, h3, h4, h5, h6, span, .cta-btn {
   font-size: 2rem;
   margin-bottom: 40px;
   line-height: 1.5;
+  
 }
 
 .card-container {
@@ -154,7 +156,6 @@ p, h1, h2, h3, h4, h5, h6, span, .cta-btn {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  
 }
 
 .card {
@@ -185,25 +186,46 @@ p, h1, h2, h3, h4, h5, h6, span, .cta-btn {
 .card h3 {
   padding: 16px;
   font-weight: 600;
-  
-  
+  min-width: none;
+ 
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
-
 /*=== porfolio section===*/
 
  h2 {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;;
  }
+
+
+
  .cta-btn{
+  color: #e4e4e4;
+  padding: 12px 28px;
+  background:#091829;
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 80px;
+ }
+
+ .cta-btn:hover {
+  background: #bfd4ed;
   color: #000000;
-  display: inline-block;
-}
+ }
+
+  .portfolio-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+
 
 
 /* ===== VIDEO SECTION ===== */
@@ -221,7 +243,9 @@ p, h1, h2, h3, h4, h5, h6, span, .cta-btn {
   border-radius: 8px;
 }
 
-
+.video:hover {
+  transform: translateY(-5px);
+}
 
 /* ===== FOOTER ===== */
 .site-footer {
