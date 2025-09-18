@@ -48,13 +48,13 @@ p {
   line-height: 1.5;
   flex: 1;
   text-align: left;
-  max-width: 70%;
+  max-width: 65%;
 } 
 
 /* Image behavior inside cards */
 .card img {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   max-height: 550px;
   object-fit: cover;
   display: block;
