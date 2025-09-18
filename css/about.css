@@ -22,13 +22,12 @@ p {
   height: auto;
   margin: 0 auto;
   padding: 0px;
-}
+} 
 
 /* Individual card layout */
 .card {
   width: auto;
   height: auto;
-max-width: 2000px;
   margin: 0 auto 40px;
   border: 1px solid lab(95.21% -5.69 -5.23);
   border-radius: 10px;
