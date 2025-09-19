@@ -42,7 +42,7 @@ p {
 
 
 .card-text {
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
   padding: 15px;
   line-height: 1.5;
@@ -93,18 +93,19 @@ p {
 
 
   /* Standalone image styling */
-.card-container.standalone-image {
+.standalone-image {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 50px 0;
 }
 
-.card-container.standalone-image img {
+
+.standalone-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 86, 9, 0.2);
   transition: transform 0.3s ease;
 }
 
