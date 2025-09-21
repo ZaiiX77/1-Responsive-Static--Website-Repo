@@ -12,7 +12,6 @@ body {
   color: #111;
   line-height: 1.6;
   font-weight: 700;
-text-align: center;
 }
 
 /* banner */
@@ -37,7 +36,7 @@ text-align: center;
 
  /* for the a-z method section*/ 
 
- #a-z-method {
+ #a-z-method.card {
   display: flex center;
   flex-wrap: wrap;
   padding: 20px;
@@ -47,15 +46,17 @@ text-align: center;
   height: auto;
   margin: 0 auto;
   align-items: center;
+  text-align: center;
+
   
 }
- #a-z-method h3 {
+#a-z-method.card h3 {
   font-size: 1.0rem;
   color: #160c0c;
   font-weight: bold;
  }
 
- #a-z-method p {
+#a-z-method.card p {
   font-size: .75em;
   color: #3d3d3d;
   text-align: center;
@@ -65,17 +66,19 @@ text-align: center;
  }
  
 /* Card container to hold all cards */
-h2 {
+.card h2 {
   font-size: 1.5rem;
-  margin-top: -2px;
   color: #1b1b1b;
+  text-align: center;
+
 }
-h3 {
+.card h3 {
   font-size: 1.0rem;
   color: #333333;
-  margin-top: -5px;
+  text-align: center;
+
 }
-p {
+.card p {
   font-size: .75em;
   color: #1a1a1a;
   text-align: center;
@@ -94,7 +97,8 @@ p {
   transition: color 0.6s ease;
   background-color: #091829;
   padding: 10px 20px;
-  border-radius: 50px;  
+  border-radius: 50px;
+
 }
 
 .card iframe {
