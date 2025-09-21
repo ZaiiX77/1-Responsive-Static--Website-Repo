@@ -103,6 +103,7 @@ body {
 
 .card iframe {
   border: 0.25em solid rgba(13, 0, 48, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin-bottom: 30px;
   justify-content: center; 
@@ -111,13 +112,10 @@ body {
   max-width: 100vh;
   height: 40vh;
   height: fit-content 200vh;
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
 }
 /*  card layout but there is another card layout rule in the styles.css linked to the uxui html so be careful */
 .card {
   padding-bottom: 3em;
   max-height: fit-content 500vh;
-
 }

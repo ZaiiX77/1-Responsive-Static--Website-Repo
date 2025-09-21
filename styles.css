@@ -328,14 +328,14 @@ p, h1, h2, h3, h4, h5, h6, span, .cta-btn {
 
   .card{
     width: 100;
-  }
+}
 }
 
 /* banner  copied from uxui to check which css works in the github live web*/
 .hero-image-uxui {
   width: 100%;
   height: 50vh; /*means view port so depends on the screen type */
-  background:url("/assets/calstampede.jpg") center center/cover no-repeat;
+  background:url("assets/calstampede.jpg") center center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
