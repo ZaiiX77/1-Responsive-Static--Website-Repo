@@ -52,6 +52,7 @@ text-align: center;
  #a-z-method h3 {
   font-size: 1.0rem;
   color: #160c0c;
+  font-weight: bold;
  }
 
  #a-z-method p {
@@ -59,7 +60,8 @@ text-align: center;
   color: #3d3d3d;
   text-align: center;
   text-indent: hanging;
-  padding: 1em 1em 30px
+  padding: 1em 1em 30px;
+  size-adjust: auto;
  }
  
 /* Card container to hold all cards */
@@ -71,8 +73,7 @@ h2 {
 h3 {
   font-size: 1.0rem;
   color: #333333;
-    margin-top: -5px;
-
+  margin-top: -5px;
 }
 p {
   font-size: .75em;
@@ -81,6 +82,9 @@ p {
   text-indent: hanging;
   padding: 1em 1em 30px;
   size-adjust: auto;
+  justify-content:end;
+  align-items: end; 
+
 }
 
 .card #link a {
@@ -97,9 +101,17 @@ p {
   border: 0.25em solid rgba(13, 0, 48, 0.1);
   border-radius: 10px;
   margin-bottom: 30px;
-   display: center;
+  justify-content: center; 
+  align-items: center;
   min-width: fit-content;
   max-width: 100%;
   height: auto;
+  max-height: fit-content;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+/*  card layout but there is another card layout rule in the styles.css linked to the uxui html so be careful */
+.card {
+  padding-bottom: 2em;
+
 }
