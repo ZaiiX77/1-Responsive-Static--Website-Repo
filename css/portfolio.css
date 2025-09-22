@@ -98,7 +98,7 @@ body {
   background-color: #091829;
   padding: 10px 20px;
   border-radius: 50px;
-
+  display: center;
 }
 
 .card iframe {
